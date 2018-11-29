@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c5cafb324568d954780abb858c25db7ce675ab3c">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-c264bdef29992669ca730bb8c869931a60594a58.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c0c912d58c9468b1f9d9769c8975afdf2c85d681">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-5b0a5922a5592bc340ba762a240d86607bf51e79.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="cb6fab7a71fa9ec1f483d44c5fca65ab469d8aca">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-1439509053e204a531fe86bc1af0d63c2c058a4e.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c2ac04c5b232f6f0658ee4f1c13be09cd76406e2">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-08c959647c22ea6812d1e6a735a6d323fe0e4ec7.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="b99f0b78bbcb76b915bc6529a83b65d4d46990dd">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-acda77e59d5d5b9d9f03732289e25eab2a9aae94.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="6e85edfc9b5346d216e50ccef1f8e825504144a3">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-08bcba7151d7b12fd851bc69a80180058352b111.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-fe1e7ca5bc5b8ffd03dc46dd6f53ad95993e10d0.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="dcf8c83c3dead00a6c4fe313e95f7aaca20dc641">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-356162b9cd6c9b091f122cc2f3150bfa2c34867d.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="c756d14e99d39471e99013a1e8fd2f3813ed42bf">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-d01d14c528f3c921ab3625cf23b710a95a1572c8.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-4a4703380b027ca2998fbc9b6f766fed496e9957.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="4a135d56554069e5d0ff80e3220e887e57146ee5">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-8acc53fd6d112a8bfdcef2d7e0b09f60fd8dfd45.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0124ce31248c0e8acfa2b28283c6d1a4d76e73d2">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-e53ce7613fd1f9feec08ec778615464297fafe52.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1ff30fa49c07a08c3035d7218a3efebf5680d522">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-e58b4be30672e78f64d9e40f3bf8bdf380735ae8.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="77a9dcb5f8b1dba36aacaa9c150eb0942dbea158">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-a5cbd52ace243c057a17c71fca785739f34ab901.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="0632f06970823b7e3436f649bfa65b47035c91d0">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-8cf3d19cd89b125fa49c202e137236637ef7ae85.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d11330ea68c0d964d30d5caed1f27e6b1488b189">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-0633a0a0a50271f077c1f8e2bf3f6ec6fcbff4a1.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="98137c4d12c50923f5809852b1ef4d1c4e162081">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-45a2be31bdce614a13d178d2639d503c5651ffc6.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-b438a595450c30bdc3d3b7f24c2b3b02c4f6be85.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e23ea11124bb700eeddd4ab7aa848c615f493850">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-9e74a3466ac22195501f84af88e890cb0ed0c1e3.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appstate\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="edea92852b40eee716e910af8dad9eeaa58fb0e1">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-545b70c12ece00ab1adfbd4caef506c0afc1f1c5.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2491ae1b2a848af1f4f0c795f3117c1bd6a1989f">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-fb15940721aed0ec55b56582bdb25278c423eb66.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="166e458ee3b5fb5fcff0f936df3f3a788e6c54f3">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-51901f4f5ab5bc39dc7c856791528037e73b5022.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-6abdeb4498e3b05f27ed2b16fa6f1ca2aaa20244.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="130b32ed466fa0f63efd4c7d6250ccd2ed506790">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-c9ca6a3a40ad616b7581e0135874d8005b1aab89.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="42a1ee578b62fd1bd28b3307a679dc9ba0791587">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-83c3c3452b7eff4037fe906d399f5491223f568e.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="2e24e5f1b11170163028277de63f709e42525db4">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-4c62e9550f5acca8c639776776e98a88726b0f06.jar" />
+    </item>
+    <item
+        jar="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\7.8.0\jars\classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="adebe28e0c0c05d34a3bfd76f3275bf4d8ff87b6">
+        <dex dex="C:\Users\DELL\Desktop\Andriod Project\Android-MobileVisionAPI-master\app\build\intermediates\pre-dexed\debug\classes-8f57188893e647f80dbe5c4385b51e001b68deba.jar" />
+    </item>
+
+</items>
