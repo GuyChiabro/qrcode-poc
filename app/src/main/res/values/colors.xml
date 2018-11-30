@@ -4,4 +4,5 @@
     <color name="translucent_red">#80ff0000</color>
     <color name="pink_red">#EF5C81</color>
     <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
 </resources>

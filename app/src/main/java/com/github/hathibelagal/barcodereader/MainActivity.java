@@ -5,6 +5,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Point;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
@@ -13,7 +14,9 @@ import android.view.Display;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
+import android.view.ViewTreeObserver;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.google.android.gms.vision.CameraSource;
@@ -35,12 +38,15 @@ public class MainActivity extends Activity {
     private SurfaceView cameraView;
     private TextView barcodeInfo;
     private Button pickPicBtn;
+    private FrameLayout focusFrame;
+    private int focusFrameWidth;
+    private int focusFrameHeight;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        focusFrame = findViewById(R.id.focus_frame);
         cameraView = findViewById(R.id.camera_view);
         barcodeInfo = findViewById(R.id.code_info);
         pickPicBtn = findViewById(R.id.pick_pic_btn);
@@ -52,25 +58,45 @@ public class MainActivity extends Activity {
             }
         });
 
+        ViewTreeObserver vto = focusFrame.getViewTreeObserver();
+        vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
+            @Override
+            public void onGlobalLayout() {
+                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
+                    MainActivity.this.focusFrame.getViewTreeObserver().removeGlobalOnLayoutListener(this);
+                } else {
+                    MainActivity.this.focusFrame.getViewTreeObserver().removeOnGlobalLayoutListener(this);
+                }
+                focusFrameWidth = MainActivity.this.focusFrame.getMeasuredWidth();
+                focusFrameHeight = MainActivity.this.focusFrame.getMeasuredHeight();
+
+            }
+        });
+
         barcodeDetector =
                 new BarcodeDetector.Builder(this)
                         .setBarcodeFormats(Barcode.QR_CODE)
                         .build();
+
+
         Display display = getWindowManager().getDefaultDisplay();
         Point size = new Point();
         display.getSize(size);
-        int width = size.x;
-        int height = size.y;
+        final int width = size.x;
+        final int height = size.y;
+        BoxDetector boxDetector = new BoxDetector(barcodeDetector, width, height);
         cameraSource = new CameraSource
-                .Builder(this, barcodeDetector)
-                .setRequestedPreviewSize(2592,4608)
-                //.setAutoFocusEnabled(true)
-
+                .Builder(this, boxDetector)
+                .setRequestedPreviewSize(height,width)
+                .setAutoFocusEnabled(true)
                 .build();
 
         cameraView.getHolder().addCallback(new SurfaceHolder.Callback() {
             @Override
             public void surfaceCreated(SurfaceHolder holder) {
+                focusFrameWidth = focusFrame.getMeasuredWidth();
+                focusFrameHeight = focusFrame.getMeasuredHeight();
+
                 try {
                     if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CAMERA)
                             == PackageManager.PERMISSION_GRANTED) {
@@ -102,7 +128,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        barcodeDetector.setProcessor(new Detector.Processor<Barcode>() {
+        boxDetector.setProcessor(new Detector.Processor<Barcode>() {
             @Override
             public void release() {
             }
@@ -122,6 +148,12 @@ public class MainActivity extends Activity {
                 }
             }
         });
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
 
     }
 
