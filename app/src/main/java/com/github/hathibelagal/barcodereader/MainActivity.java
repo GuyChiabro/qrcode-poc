@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Point;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
@@ -14,7 +13,6 @@ import android.view.Display;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
-import android.view.ViewTreeObserver;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
@@ -34,6 +32,7 @@ public class MainActivity extends Activity {
     private static final int MY_PERMISSIONS_REQUEST_CAMERA = 10;
 
     private BarcodeDetector barcodeDetector;
+    private BoxDetector boxDetector;
     private CameraSource cameraSource;
     private SurfaceView cameraView;
     private TextView barcodeInfo;
@@ -57,22 +56,11 @@ public class MainActivity extends Activity {
                 startActivity(intent);
             }
         });
+    }
 
-        ViewTreeObserver vto = focusFrame.getViewTreeObserver();
-        vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-            @Override
-            public void onGlobalLayout() {
-                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.JELLY_BEAN) {
-                    MainActivity.this.focusFrame.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-                } else {
-                    MainActivity.this.focusFrame.getViewTreeObserver().removeOnGlobalLayoutListener(this);
-                }
-                focusFrameWidth = MainActivity.this.focusFrame.getMeasuredWidth();
-                focusFrameHeight = MainActivity.this.focusFrame.getMeasuredHeight();
-
-            }
-        });
-
+    @Override
+    protected void onStart() {
+        super.onStart();
         barcodeDetector =
                 new BarcodeDetector.Builder(this)
                         .setBarcodeFormats(Barcode.QR_CODE)
@@ -84,18 +72,20 @@ public class MainActivity extends Activity {
         display.getSize(size);
         final int width = size.x;
         final int height = size.y;
-        BoxDetector boxDetector = new BoxDetector(barcodeDetector, width, height);
-        cameraSource = new CameraSource
-                .Builder(this, boxDetector)
-                .setRequestedPreviewSize(height,width)
-                .setAutoFocusEnabled(true)
-                .build();
+        boxDetector = new BoxDetector(barcodeDetector, focusFrameWidth, focusFrameHeight);
+
 
         cameraView.getHolder().addCallback(new SurfaceHolder.Callback() {
             @Override
             public void surfaceCreated(SurfaceHolder holder) {
                 focusFrameWidth = focusFrame.getMeasuredWidth();
                 focusFrameHeight = focusFrame.getMeasuredHeight();
+                boxDetector.setBox(focusFrameWidth,focusFrameHeight);
+                cameraSource = new CameraSource
+                        .Builder(MainActivity.this, boxDetector)
+                        .setRequestedPreviewSize(height,width)
+                        .setAutoFocusEnabled(true)
+                        .build();
 
                 try {
                     if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CAMERA)
@@ -112,7 +102,7 @@ public class MainActivity extends Activity {
                                     MY_PERMISSIONS_REQUEST_CAMERA);
                         }
                     }
-                     cameraSource.start(cameraView.getHolder());
+                    cameraSource.start(cameraView.getHolder());
                 } catch (IOException ie) {
                     Log.e("CAMERA SOURCE", ie.getMessage());
                 }
@@ -148,12 +138,6 @@ public class MainActivity extends Activity {
                 }
             }
         });
-
-    }
-
-    @Override
-    protected void onStart() {
-        super.onStart();
 
     }
 
