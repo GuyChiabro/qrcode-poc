@@ -25,8 +25,8 @@ public class BoxDetector extends Detector {
         public SparseArray detect(Frame frame) {
             int width = frame.getMetadata().getWidth();
             int height = frame.getMetadata().getHeight();
-            int right = (width / 2) + ((mBoxHeight / 2)*63/100);
-            int left = (width / 2) - ((mBoxHeight / 2)*137/100);
+            int right = (width / 2) + ((mBoxHeight / 2)*60/100);
+            int left = (width / 2) - ((mBoxHeight / 2)*140/100);
             int bottom = (height / 2) + (mBoxWidth / 2);
             int top = (height / 2) - (mBoxWidth / 2);
 

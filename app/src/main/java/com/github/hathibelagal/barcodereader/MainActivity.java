@@ -44,7 +44,7 @@ public class MainActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.test);
         focusFrame = findViewById(R.id.focus_frame);
         cameraView = findViewById(R.id.camera_view);
         barcodeInfo = findViewById(R.id.code_info);
